@@ -34,7 +34,7 @@ jobs:
           node --check dist/app.js
           node --check dist/engine.js
           node --check dist/worker.js
-          node --test tests/engine.test.mjs
+          node --test tests/*.test.mjs
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload site
